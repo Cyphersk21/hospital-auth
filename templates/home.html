@@ -1,0 +1,38 @@
+{% extends 'base.html' %} 
+
+{% load static %} 
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Application</h1>
+            <p>Your ultimate solution for managing patient and doctor interactions seamlessly.</p>
+            <div class="cta-buttons">
+                <a href="{% url 'signup' %}" class="cta-button">Sign Up</a>
+                <a href="{% url 'login' %}" class="cta-button secondary">Login</a>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature">
+                <h3>Easy Signup</h3>
+                <p>Quick and simple signup process for patients and doctors.</p>
+            </div>
+            <div class="feature">
+                <h3>Custom Dashboards</h3>
+                <p>Personalized dashboards for different types of users.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure Login</h3>
+                <p>Robust and secure login to keep your data safe.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

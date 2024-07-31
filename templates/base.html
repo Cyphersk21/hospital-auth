@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Hospital Management {% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'scripts/validation.js' %}" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="page-wrapper">
+        <header>
+            <nav>
+                <div class="container">
+                    
+                    <ul class="nav-links">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    
+                    {% if request.session.user_id %}
+                        
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                        {% if user.user_type == 'P'%}
+                            <li><a href="{% url 'patient_dashboard' %}">Patient Dashboard</a></li>
+                        {% elif user.user_type == 'D' %}
+                            <li><a href="{% url 'doctor_dashboard' %}">Doctor Dashboard</a></li>
+                        {% endif %}
+                    {% else %}
+                        <li><a href="{% url 'signup' %}">Signup</a></li>
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                    {% endif %}
+                </ul>
+                </div>
+                
+            </nav>
+        </header>
+    <!-- Main Content -->
+        <main class="container">
+            {% block content %}
+            <!-- Content will be injected here -->
+            {% endblock %}
+        </main>
+    <!-- Footer Section -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Hospital Manegement</p>
+            </div>
+            
+        </footer>
+    </div>
+    
+</body>
+</html>

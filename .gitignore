@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.py[co]
+*.so
+*.zip
+*.db
+*.sqlite3
+*.py[co]
+
+# Django migrations
+**/migrations/
+*.sqlite3
+
+# If your build process includes build directories
+build/
+dist/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# dotenv
+.env
+
+# virtualenv
+.venv/
+env/
+env.bak/
+venv/
+venv.bak/
+
+# pyenv
+.python-version
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store

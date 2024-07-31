@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}Signup{% endblock %}
+
+{% block content %}
+    <h1>Signup</h1>
+    <form id="signup-form" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <span id="first_name_error" class="error-message"></span><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <span id="last_name_error" class="error-message"></span><br>
+
+        <label for="profile_picture">Profile Picture:</label>
+        <input type="file" id="profile_picture" name="profile_picture" accept="image/*"><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <span id="username_error" class="error-message"></span><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="email_error" class="error-message"></span><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span id="password_error" class="error-message"></span><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+        <span id="confirm_password_error" class="error-message"></span><br>
+
+        <label for="address_line1">Address Line 1:</label>
+        <input type="text" id="address_line1" name="address_line1" required><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        <span id="city_error" class="error-message"></span><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+        <span id="state_error" class="error-message"></span><br>
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" required>
+        <span id="pincode_error" class="error-message"></span><br>
+
+        <label for="user_type">User Type:</label>
+        <select id="user_type" name="user_type" required>
+            <option value="">Select...</option>
+            <option value="P">Patient</option>
+            <option value="D">Doctor</option>
+        </select><br>
+        <div id="specialization_field" style="display: none;">
+            <label for="specialization">Specialization:</label>
+            <input type="text" id="specialization" name="specialization"><br>
+        </div>
+        <button type="submit">Signup</button>
+    </form>
+{% endblock %}
