@@ -9,7 +9,7 @@ Based on the project details provided, here's a tailored `README.md` file that d
 
 This is a Django-based application designed to manage user registrations and logins for different types of users. On login, users are redirected to their respective dashboards. The application supports two types of users:
 
-- Patients
+- *Patients*
 - Doctors
 
 The project includes functionalities for user authentication and dashboard management.
