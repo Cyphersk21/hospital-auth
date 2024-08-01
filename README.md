@@ -9,46 +9,46 @@ Based on the project details provided, here's a tailored `README.md` file that d
 
 This is a Django-based application designed to manage user registrations and logins for different types of users. On login, users are redirected to their respective dashboards. The application supports two types of users:
 
-- **Patients**
-- **Doctors**
+- Patients
+- Doctors
 
 The project includes functionalities for user authentication and dashboard management.
 
 ## Features
 
-- **Signup and Login**: Users can sign up and log in with their credentials.
-- **Password Confirmation**: The application ensures that the password and confirm password fields match during signup.
-- **Dashboards**: After logging in, users are redirected to dashboards that display the details entered during signup.
+- Signup and Login: Users can sign up and log in with their credentials.
+- Password Confirmation: The application ensures that the password and confirm password fields match during signup.
+- Dashboards: After logging in, users are redirected to dashboards that display the details entered during signup.
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, Bootstrap
-- **Backend**: Python, Django
-- **Database**: MySQL
+- Frontend: HTML, CSS, Bootstrap
+- Backend: Python, Django
+- Database: MySQL
 
 ## Installation
 
 To set up this project on your local machine, follow these steps:
 
-1. **Clone the Repository**:
+1. Clone the Repository:
 
    ```bash
    git clone https://github.com/<your-username>/<your-repo-name>.git
    ```
 
-2. **Navigate to the Project Directory**:
+2. Navigate to the Project Directory:
 
    ```bash
    cd <your-repo-name>
    ```
 
-3. **Create a Virtual Environment**:
+3. Create a Virtual Environment:
 
    ```bash
    python -m venv venv
    ```
 
-4. **Activate the Virtual Environment**:
+4. Activate the Virtual Environment:
 
    On Windows:
    ```bash
@@ -60,29 +60,29 @@ To set up this project on your local machine, follow these steps:
    source venv/bin/activate
    ```
 
-5. **Install Dependencies**:
+5. Install Dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-6. **Set Up the Database**:
+6. Set Up the Database:
 
    Update the `DATABASES` setting in `settings.py` with your MySQL configuration.
 
-7. **Run Migrations**:
+7. Run Migrations:
 
    ```bash
    python manage.py migrate
    ```
 
-8. **Create a Superuser**:
+8. Create a Superuser:
 
    ```bash
    python manage.py createsuperuser
    ```
 
-9. **Run the Development Server**:
+9. Run the Development Server:
 
    ```bash
    python manage.py runserver
@@ -92,7 +92,7 @@ To set up this project on your local machine, follow these steps:
 
 ## Usage
 
-1. **Signup**:
+1. Signup:
    - Navigate to the signup page.
    - Fill out the form with the following fields:
      - First Name
@@ -105,11 +105,11 @@ To set up this project on your local machine, follow these steps:
      - Address (line1, city, state, pincode)
    - Ensure that the password and confirm password fields match.
 
-2. **Login**:
+2. Login:
    - Navigate to the login page.
    - Enter your credentials to log in.
 
-3. **Dashboards**:
+3. Dashboards:
    - Patients and Doctors will be redirected to their respective dashboards upon logging in.
    - The dashboards display the details entered during signup.
 
@@ -135,24 +135,24 @@ For any inquiries, please contact [satishkumar.kamble21@gmail.com](mailto:satish
 
 ### Adding the `README.md` File
 
-1. **Create the `README.md` File**:
+1. Create the `README.md` File:
 
    ```bash
    touch README.md
    ```
 
-2. **Edit the `README.md` File**:
+2. Edit the `README.md` File:
 
    Open the `README.md` file in your text editor and paste the content from the template above. Customize the placeholders with your specific details.
 
-3. **Add and Commit the `README.md` File**:
+3. Add and Commit the `README.md` File:
 
    ```bash
    git add README.md
    git commit -m "Add README.md file"
    ```
 
-4. **Push the Changes to GitHub**:
+4. Push the Changes to GitHub:
 
    ```bash
    git push
